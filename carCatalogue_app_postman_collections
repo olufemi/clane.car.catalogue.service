@@ -1,0 +1,417 @@
+{
+	"info": {
+		"_postman_id": "aba25d29-00e9-440b-b212-3c80d1764400",
+		"name": "A_Clane",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Car Catalogue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Venza\",\"description\":\"Venza Utility\",\"categoryId\":1}"
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/create-car/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"create-car",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Car Tag",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"tagName\":\"V6-Engine\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/create-tag/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"create-tag",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Car Catalogue",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"LandLand\",\"description\":\"A Super Car\",\"categoryId\":15}"
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/create-car/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"create-car",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get A Car Catalogue",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/car/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"car",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Car Catalogue by alphabet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/search-car?search=(name:LandLand)",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"search-car"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "(name:LandLand)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Car Catalogue by numeric",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/search-car?search=(categoryId:15)",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"search-car"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "(categoryId:15)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Car Catalogues",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"\",\"description\":\"\",\"categoryId\":1}"
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Car Category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/create-cat/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"create-cat",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  CarCategories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/categories/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"categories",
+						""
+					]
+				},
+				"description": "Get Cars"
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Car Category",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"category"
+					]
+				},
+				"description": "Get Cars"
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Car Tags",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"tags"
+					]
+				},
+				"description": "Get Cars"
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Car Tag",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8030/api/tag/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"api",
+						"tag",
+						""
+					]
+				},
+				"description": "Get Cars"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
