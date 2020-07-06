@@ -24,8 +24,8 @@ as based-api-url: http://{ip-address}:8030/api/search-car
 
 The Post APIs Collections,
 
-This app is developed in my local machine and commited here as instructed. The Postman collections URL could not be shared since the application is not remotely accessible.
-A Postman generated josn file (named: carCatalogue_app_postman_collections) is contained in this repo.
+Here is the public link of the json collection: https://www.getpostman.com/collections/42aa3759bf3150700111
+A Postman generated josn file (named: carCatalogue_app_postman_collections) is also contained in this repo.
 The following are the API URLs:
 1. Create Car Catalogue
 2. Create Car Tag
