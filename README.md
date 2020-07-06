@@ -20,4 +20,27 @@ engine number (it is sequential and 5 digits long, it will be created by the app
 The Search API
 Car Catague(s) can be serached using a prefered cateria (name, description, category/categoryId or tag/tagId)
 , such as choosen any of the following or combining them, two APIs are shared in the Postman collection, whth
-as based-api-url: http://localhost:8030/api/search-car
+as based-api-url: http://{ip-address}:8030/api/search-car
+
+The Post APIs Collections,
+
+This app is developed in my local machine and commited here as instructed. The Postman collections URL could not be shared since the application is not remotely accessible.
+A Postman generated josn file (named: ) is contained in this repo.
+The following are the API URLs:
+1. Create Car Catalogue
+2. Create Car Tag
+3. Update Car Catalogue
+4. Get A Car Catalogue
+5. Search Car Catalogue by alphabet
+6. Search Car Catalogue by numeric
+7. Get All Car Catalogues
+8. Create Car Category
+9. Get CarCategories
+10. Get Car Category
+11. Get Car Tags
+12. Get  Car Tag
+
+
+
+Readme by: Olufemi Oshin, Senior Software Architect and Developer.
+
